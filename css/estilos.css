@@ -55,6 +55,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 #qr-input:focus {
