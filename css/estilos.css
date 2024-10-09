@@ -1,0 +1,12 @@
+:root{
+    --blanco: #F2F5F9;
+    --azul-electrico: #3662E3;
+    --azul-noche: #111729;
+    --azul-oscuro: #111729;
+    --gris-azulado: #364153;
+    --azul-brillante-transparente: #4e80ee33;
+}
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+  }
