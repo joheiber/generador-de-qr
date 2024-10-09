@@ -36,7 +36,8 @@ body {
     background-color: var(--azul-oscuro);
     border-radius: .8rem;
     padding:5px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
 }
 
 #form-container:hover {
@@ -50,6 +51,7 @@ body {
 }
 
 #qr-input {
+    
     color: var(--blanco);
     background: none;
     padding: 10px;
