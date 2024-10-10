@@ -11,7 +11,6 @@
 }
 body {
     margin: 0;
-    
     background-color: var(--azul-noche);
     display: flex;
     align-items: center;
@@ -25,7 +24,6 @@ body {
 }
 
 #qr-tablero {
-    max-width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +84,8 @@ body {
     width: 70%;
     margin: 1rem;
 }
-@media screen and (min-width: 472px){
+
+@media screen and (min-width: 489px){
     
     body{
        background-position: calc(50% + 250px) calc(50% + 80px); 
