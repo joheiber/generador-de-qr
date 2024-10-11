@@ -17,6 +17,7 @@ $(document).ready(function () {
                     correctLevel: QRCode.CorrectLevel.H
                 });
                 $("#qr-tablero").hide()
+                $("#header-qrcode").show()
                 $("#div-container").show()
                 
             } else {

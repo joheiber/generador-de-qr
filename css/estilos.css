@@ -14,7 +14,7 @@
 body {
     margin: 0;
     background-color: var(--azul-noche);
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: url('../img/bg-illustration.svg');
     background-repeat: no-repeat;
     background-position: calc(50% + 150px) calc(50% + 70px);
@@ -23,14 +23,18 @@ body {
 }
 
 header{
+    display: none;
     margin: 1rem;
     width: 40%;
+}
+#div-header{
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 #container{
-    min-height: 70vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -160,12 +164,13 @@ header{
 button>svg {
     margin: 0 5px;
 }
-@media screen and (min-width: 403px) {
+@media screen and (min-width: 394px) {
 
     header{
         width: 100%;
     }
 }
+
 @media screen and (min-width: 489px) {
 
     header{
