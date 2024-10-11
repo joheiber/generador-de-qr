@@ -160,8 +160,17 @@ header{
 button>svg {
     margin: 0 5px;
 }
+@media screen and (min-width: 403px) {
 
+    header{
+        width: 100%;
+    }
+}
 @media screen and (min-width: 489px) {
+
+    header{
+        width: 60%;
+    }
 
     body {
         background-position: calc(50% + 250px) calc(50% + 80px);
