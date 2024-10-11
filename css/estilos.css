@@ -14,15 +14,32 @@
 body {
     margin: 0;
     background-color: var(--azul-noche);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background-image: url('../img/bg-illustration.svg');
     background-repeat: no-repeat;
     background-position: calc(50% + 150px) calc(50% + 70px);
     background-size: contain;
 
+}
+
+header{
+    margin: 1rem;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#container{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#link-home{
+    margin: 1rem;
+    width: 20%;
 }
 
 #qr-tablero {

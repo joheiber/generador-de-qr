@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    $("#qrcode").empty();
-
 
     $("#qr-form").on("submit", function (event) {
         event.preventDefault();
@@ -9,7 +7,7 @@ $(document).ready(function () {
 
         if (url !== "") {
             if (esValidaURL(url)) {
-                $("#qrcode").empty();
+                $("#qr-code").empty();
                 var qrcode = new QRCode(document.getElementById("qr-code"), {
                     text: `${url}`,
                     width: 128,
@@ -18,8 +16,9 @@ $(document).ready(function () {
                     colorLight: "#ffffff",
                     correctLevel: QRCode.CorrectLevel.H
                 });
-                $("#div-container").show()
                 $("#qr-tablero").hide()
+                $("#div-container").show()
+                
             } else {
                 Swal.fire({
                     title: "URL invalido!",
@@ -74,6 +73,16 @@ $(document).ready(function () {
             });
         });
     })
+
+    $("#link-home").on("click", function () {
+        event.preventDefault();
+        if ($('#qr-tablero').is(':visible')) {
+        } else {
+            $("#div-container").hide()
+            $("#qr-tablero").show()
+                
+        }
+})
 
     function esValidaURL(url) {
         try {
